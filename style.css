@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --veryDarkBlue1: hsl(217, 54%, 11%);
+  --veryDarkBlue2: hsl(216, 50%, 16%);
+  --veryDarkBlue3: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --fontSize: 18px;
+  --fontFamily: "Outfit";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+  list-style: none;
+}
+main {
+  background-color: var(--veryDarkBlue1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardSec {
+  background-color: var(--veryDarkBlue2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 25rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  align-self: center;
+  border-radius: 0.75rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.text h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.text p {
+  color: var(--Softblue);
+  font-size: 1.2rem;
+  max-width: 29ch;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.equi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: var(--veryDarkBlue3) solid 0.1rem;
+  margin-bottom: 1rem;
+}
+.equiLogo,
+.timeLeft {
+  display: flex;
+  align-items: center;
+}
+.timeLeft p {
+  margin-left: 0.7rem;
+}
+.equiLogo p {
+  margin-left: 0.7rem;
+  color: var(--Cyan);
+}
+.creator {
+  display: flex;
+  align-items: center;
+}
+.creator img {
+  max-width: 15%;
+  margin-right: 0.5rem;
+}
+.whiteText {
+  color: var(--white);
+}
+footer,
+footer a {
+  background-color: var(--veryDarkBlue1);
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+}
+@media only screen and (max-width: 600px) {
+  .cardSec {
+    width: 20rem;
+  }
+  .text p {
+    max-width: 40ch;
+    font-size: 1rem;
+  }
+}
